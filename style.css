@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+   
+  }
+.container{
+    max-width: 1440px;
+    margin:auto;
+}
+.container .header {
+    display: flex;
+    justify-content: space-around;
+    padding: 48px;
+  }
+.container .header h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 3.6rem;
+ }
+ .container .header .text {
+    max-width: 440px;
+    font-size: 1.8rem;
+  }
+  .container .header .text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  } 
+  .container .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 72px 150px;
+  }
+  .container .images .image{
+    position: relative;
+    width:265px;
+  }
+  .container .images .image:nth-child(3n + 2) {
+    margin-top: 100px;
+  }
+  .container .images .image img {
+    width: 238px;
+  }
+  .container .images .image .job {
+    position: absolute;
+    right: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+  }
+  .container .images .image .job {
+    
+   position: absolute;
+    right:0;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+  }
+  .container .images .image .name {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  footer {
+    margin-bottom: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #a9a9a9;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #a9a9a9;
+  }
+  
+  footer a:hover {
+    color: #000;
+    transition: all 0.3s;
+  }
+  @media (max-width: 1024px) {
+    .container .images {
+      padding: 56px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container .header {
+      flex-direction: column;
+      margin: 0 36px;
+    }
+  
+    .container .header .text h2 {
+      margin-top: 38px;
+      margin-bottom: 10px;
+    }
+  
+    .container .images {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 48px;
+    }
+  
+    .container .images .image:nth-child(3n + 2) {
+      margin-top: unset;
+    }
+  
+    .container .images .image:nth-child(odd) {
+      row-gap: 64px;
+    }
+  
+    .container .images .image:nth-child(even) {
+      margin-top: 64px;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .container .header {
+      margin: 0;
+      padding: 24px;
+    }
+  
+    .container .header .text {
+      max-width: 333px;
+    }
+  
+    .container .header .text p {
+      font-size: 1.4rem;
+    }
+  
+    .container .images {
+      margin-bottom: 24px;
+      padding: 24px;
+    }
+  
+    .container .images .image {
+      width: 154px;
+    }
+  
+    .container .images .image img {
+      width: 138px;
+    }
+  
+    .container .images .image .job {
+      font-size: 1rem;
+    }
+  
+    .container .images .image .name {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .container .header,
+    .container .images {
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .container .header h1 {
+      font-size: 3.2rem;
+    }
+  
+    .container .images {
+      column-gap: 12px;
+    }
+  
+    .container .images .image {
+      width: 142px;
+    }
+  
+    .container .images .image img {
+      width: 128px;
+    }
+  
+    footer {
+      margin-bottom: 32px;
+      font-size: 1.2rem;
+    }
+  }
